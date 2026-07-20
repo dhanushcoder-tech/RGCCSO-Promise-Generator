@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🧠 RGCCSO AI Prompt Engineering Studio")
+st.title("🧠 RGCCSO AI Prompt Engineering")
 
 st.caption("Transform simple ideas into professional AI prompts using the RGCCSO Framework.")
 
@@ -37,7 +37,7 @@ if generate:
     if user_input.strip() == "":
         st.warning("Please enter an idea first.")
     else:
-        with st.spinner("🤖 Phi-3 is thinking..."):
+        with st.spinner("🤖 Gemini is generating your prompt..."):
             answer = generate_response(user_input)
 
         st.success("✅ RGCCSO Prompt Generated")
